@@ -99,9 +99,7 @@ int main()
             std::cout << str << "\n";
         }
 
-        row.clear();
-
-        row.insert(row.begin(), nextRow.begin(), nextRow.end());
+        row.assign(nextRow.begin(), nextRow.end());
 
     } while (rollsRemoved > 0);
 
